@@ -1,22 +1,12 @@
-import React,{useState} from "react";
-import '../styles/App.css';
+import React from 'react'
+import Mark1 from './Mark1'
+import Mark2 from './Mark2'
 
-
-const App=()=>{
-    const [markdown,setMarkdown]=useState('');
-
-
-
-
+let App= ()=>{
     return (
-        <div className="app">
-            <textarea value={markdown} onChange={(e)=>setMarkdown(e.target.value)}/>
-            <div className="preview">
-                <h1>{markdown}</h1>
-            </div>
-
+        <div className='app'>
+            <Mark1/>
         </div>
     )
 }
-
-export default App;
+export default App
